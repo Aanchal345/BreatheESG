@@ -1,0 +1,127 @@
+/* Login and Register */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #21453c;
+  color: white;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.header {
+  text-align: center;
+  margin-right: 2rem;
+  grid-column: span 3 / span 3;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.formContainer {
+  background-color: #235e4a;
+  padding: 2rem;
+  width: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  grid-column: span 2 / span 2;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .inputGroup {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 95%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      border: none;
+    }
+  }
+
+
+  .troubleLink {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .submitButton {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #2e9844;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #21453c;
+    }
+  }
+}
+
+
+/* SidebarLayout */
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
